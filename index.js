@@ -9,13 +9,13 @@ function calculate(num) {
 }
 
 function read() {
-	process.openStdin().on('data', function(chunk) {
+	process.openStdin().on('data', function (chunk) {
 		var param = Number(chunk);
 		try {
 			var result = calculate(param);
 			console.log('result: ' + result);
 		} catch (e) {
-			console.log(String(e));
+			console.log(e.message);
 		}
 	});
 }
