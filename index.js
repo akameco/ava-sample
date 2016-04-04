@@ -9,7 +9,7 @@ function calculate(num) {
 }
 
 function read() {
-	process.openStdin().on('data', chunk => {
+	process.openStdin().on('data', function(chunk) {
 		const param = Number(chunk);
 		try {
 			const result = calculate(param);
