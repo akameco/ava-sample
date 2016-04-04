@@ -1,0 +1,17 @@
+{
+  "name": "ava-sample",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "akameco <akameco.t@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ava": "^0.13.0",
+    "sinon": "^1.17.3"
+  }
+}
