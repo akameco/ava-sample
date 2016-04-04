@@ -10,9 +10,9 @@ function calculate(num) {
 
 function read() {
 	process.openStdin().on('data', function(chunk) {
-		const param = Number(chunk);
+		var param = Number(chunk);
 		try {
-			const result = calculate(param);
+			var result = calculate(param);
 			console.log('result: ' + result);
 		} catch (e) {
 			console.log(String(e));
